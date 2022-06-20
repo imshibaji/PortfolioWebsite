@@ -1,0 +1,9 @@
+GET https://jsonplaceholder.typicode.com/posts
+
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/x-www-form-urlencoded
+
+<request>
+    <title>Test 1</title>
+    <body>Test Body</body>
+</request>
