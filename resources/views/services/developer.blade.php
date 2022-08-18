@@ -19,23 +19,23 @@
     </div>
 </div>
 <div class="card bordered p-4 mt-2">
-    {{-- <a href="#sub-modal" class="btn btn-primary dark:bg-gray-900 dark:border-black">Subscribe for Demo Session</a> --}}
-    <a href="/project/create" class="btn btn-primary dark:bg-gray-900 dark:border-black">Hire Me for Project</a>
+    <a href="#sub-modal" class="btn btn-primary dark:bg-gray-900 dark:border-black">I want to more discuss</a>
+    {{-- <a href="/project/create" class="btn btn-primary dark:bg-gray-900 dark:border-black">Hire Me for Project</a> --}}
 </div>
 
 
 {{-- Modal UI --}}
-{{-- <div id="sub-modal" class="modal">
+<div id="sub-modal" class="modal">
     @php
         $amt=500;
     @endphp
     <div class="modal-box">
       <h6 class="pb-0 mb-0 text-blue-600 text-xs">You can stay updated with me</h6>
-      <h4 class="py-0 my-0">Book for Demo Session</h4>
-      <p>Price: <strong class="text-green-500">₹ {{number_format($amt, 2)}}/-</strong> for 30 Minutes</p>
+      <h4 class="py-0 my-0">Contact for Discussion</h4>
+      {{-- <p>Price: <strong class="text-green-500">₹ {{number_format($amt, 2)}}/-</strong> for 30 Minutes</p> --}}
       <form action="/trainings/enquery" method="POST">
           @csrf
-          <input type="hidden" name="course_name" value="Demo Session">
+          <input type="hidden" name="course_name" value="I want to more discuss about development">
           <input type="hidden" name="course_price" value="{{$amt}}">
         <div>
                 <div class="form-control">
@@ -64,10 +64,10 @@
                 </div>
         </div>
         <div class="modal-action">
-            <button type="submit" class="btn btn-primary">Subscribe Now</button>
+            <button type="submit" class="btn btn-primary">Contact Me</button>
             <a href="#" class="btn">Close</a>
         </div>
       </form>
     </div>
-</div> --}}
+</div>
 {{-- /Modal UI --}}

@@ -11,6 +11,7 @@ use App\Models\Page;
 use App\Models\Post;
 use App\Models\Training;
 use App\Models\Tutorial;
+use App\Models\Testimonial;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,8 @@ Route::resource('trainings', TrainingController::class);
 Route::resource('services', ServiceController::class);
 Route::resource('testimonials', TestimonialController::class);
 
+
+
 // Project Routers Sections
 Route::get('projects', [ProjectController::class, 'index']);
 Route::get('project/create', [ProjectController::class, 'create']);
@@ -62,6 +65,9 @@ Route::get('opts', function () {
     // return Page::getPublished();
     // return Tutorial::all();
 });
+// Route::get('testi', function(){
+//     return Testimonial::find(3199);
+// });
 
 Route::get('/sitemap.xml', [PageController::class, 'sitemap']);
 

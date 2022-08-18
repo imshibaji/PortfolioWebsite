@@ -1,5 +1,5 @@
 <div class="container py-9">
-    <h2 class="h3 font-orbitron text-center my-5">Some Students Feedbacks / Reviews</h2>
+    <h2 class="h3 font-orbitron text-center my-5">Students and Clients Feedbacks / Reviews</h2>
 
     <div class="flex lg:flex-row flex-col">
         @foreach ($testimonials as $test)

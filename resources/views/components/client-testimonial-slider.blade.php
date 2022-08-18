@@ -3,6 +3,7 @@
 
     <div class="flex flex-col">
         @foreach ($testimonials as $test)
+            @if($test->meta->customer_type=='Client')
             <div class="lg:flex-1 card shadow-lg bordered m-2 lg:mx-2">
                 <div class="card-body">
                 <div>{!! substr($test->post_content, 0, 100) !!}...</div>
@@ -17,6 +18,7 @@
                 @endforeach
                 </div>
             </div>
+            @endif
         @endforeach
         <h6 class="font-orbitron text-center"><a href="{{url('testimonials')}}">-: More Feedbacks :-</a><h6>
     </div>

@@ -15,7 +15,8 @@ class ClientTestimonialSlider extends Component
      */
     public function __construct($limit=1)
     {
-        $this->testimonials = Testimonial::published()->inRandomOrder()->limit($limit)->get();
+        // $this->testimonials = Testimonial::published()->inRandomOrder()->limit($limit)->get();
+        $this->testimonials = Testimonial::published()->hasMeta(['customer_type' => 'Client'])->inRandomOrder()->limit($limit)->get();
     }
 
     /**

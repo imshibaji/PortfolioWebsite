@@ -46,7 +46,7 @@
     @endphp
     <div class="modal-box">
       <h6 class="pb-0 mb-0 text-blue-600 text-xs">You can stay updated with me</h6>
-      <h4 class="py-0 my-0">Book for Demo Session</h4>
+      <h4 class="py-0 my-0">Book for Demo</h4>
       {{-- <p>Price: <strong class="text-green-500">₹ {{number_format($amt, 2)}}/-</strong> for 30 Minutes</p> --}}
       <form action="/trainings/enquery" method="POST">
           @csrf
@@ -80,7 +80,7 @@
                 </div>
         </div>
         <div class="modal-action">
-            <button type="submit" class="btn btn-primary">Subscribe Now</button>
+            <button type="submit" class="btn btn-primary">Send Now</button>
             <a href="#" class="btn">Close</a>
         </div>
       </form>
