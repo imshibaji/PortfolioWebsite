@@ -23,11 +23,11 @@
                 {{-- <a href="/software-development-course" class="navbar-item btn-creative {{ request()->is('software-development-course') ? 'btn-active' : '' }}">
                     <x-eos-school-o /> Coding Course
                 </a> --}}
-                <a href="/online-training" class="navbar-item btn-creative {{ request()->is('online-training') ? 'btn-active' : '' }}">
-                    <x-eos-star-o /> InPerson Training
-                </a>
                 <a href="/my-projects" class="navbar-item btn-creative {{ request()->is('my-projects') ? 'btn-active' : '' }}">
                     <x-cool-sketch /> Projects
+                </a>
+                <a href="/online-training" class="navbar-item btn-creative {{ request()->is('online-training') ? 'btn-active' : '' }}">
+                    <x-eos-star-o /> InPerson Training
                 </a>
                 <a href="/articles" class="navbar-item btn-creative {{ request()->is('articles') ? 'btn-active' : '' }}">
                     <x-eos-products />  Articles

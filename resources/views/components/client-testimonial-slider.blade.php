@@ -1,5 +1,5 @@
 <div class="container py-5">
-    <h6 class="font-orbitron text-center"><a href="{{url('testimonials')}}">Students Feedbacks</a></h6>
+    <h6 class="font-orbitron text-center"><a href="{{url('testimonials')}}">Clients Feedbacks</a></h6>
 
     <div class="flex flex-col">
         @foreach ($testimonials as $test)

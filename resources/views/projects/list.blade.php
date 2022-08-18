@@ -31,7 +31,7 @@
             @include('services.review')
         </div> --}}
         <div class="px-2">
-            <x-testimonials-slider limit="{{ $post->meta->review_limit ?? '6' }}" />
+            <x-client-testimonial-slider limit="{{ $post->meta->review_limit ?? '6' }}" />
         </div>
         {{-- <div class="px-2">
             @include('tutorial.ads')

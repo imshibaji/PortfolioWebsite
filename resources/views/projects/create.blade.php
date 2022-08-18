@@ -22,7 +22,7 @@
                 @include('projects.developer')
             </div>
             <div class="px-2">
-                <x-testimonials-slider limit="1" />
+                <x-client-testimonial-slider limit="1" />
             </div>
         </div>
     </div>
