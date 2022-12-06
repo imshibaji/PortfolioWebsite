@@ -9,7 +9,7 @@
         <div class="lg:w-4/12 mt-0 lg:mt-0 w-full flex justify-center items-center">
             <div class="avatar flex flex-col justify-center items-center mx-2 mt-2 lg:mx-0 text-center">
                 <div class="rounded-full w-80 h-80 ring ring-primary ring-offset-base-100 ring-offset-8">
-                  <img src="https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
+                  <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
                 </div>
                 <h3 class="h5 mt-5">Shibaji Debnath</h3>
                 <p class="h6 mb-3">Software Engineer, Developer and Trainer</p>
@@ -26,9 +26,9 @@
         <div class="lg:w-8/12 w-full p-12 flex flex-col justify-center items-center">
 
             <div class="w-full aspect-w-16 aspect-h-9">
-                <iframe class="bordered border-8 w-full h-full"  src="https://www.youtube.com/embed/6IqZdjaaC-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="bordered border-8 w-full h-full"  src="https://www.youtube.com/embed/mb5ASljpok8?rel=0&showinfo=0&autohide=1" title="YouTube video player" frameborder="0"></iframe>
             </div>
-            <h3 class="h5 my-8 text-center lg:text-left">Do you know how to make better Software Development career? From this video, you will be learn about most career oriented technology must be know for better knowledge and career growth.</h3>
+            <h3 class="h5 my-8 text-center lg:text-left">Do you Searching a Better Application Developer? and want make A Market Leading Software Development for your Idea? From this video, you will be know about software development technology uses. How that technology is better for your business growth.</h3>
         </div>
     </div>
 </div>

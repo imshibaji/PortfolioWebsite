@@ -21,6 +21,8 @@ class AllServicesShortcode implements Shortcode
                 'title' => $post->title,
                 'image' => $post->image,
                 'summery' => $post->excerpt,
+                'price' => $post->meta->actual_price,
+                'price_usd' => $post->meta->actual_price_usd,
                 'link' => $post->slug
             ];
         });

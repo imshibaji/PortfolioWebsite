@@ -9,6 +9,7 @@ use App\Models\Testimonial;
 use App\Models\Training;
 use App\Models\Service;
 use App\Models\Tutorial;
+use App\Models\Project;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -108,7 +109,8 @@ class PageController extends Controller
             'services' => Service::getPublished(),
             'categories' => $cats,
             'tutorials' => Tutorial::getPublished(),
-            'posts' => Post::getPublished()
+            'posts' => Post::getPublished(),
+            'projects' => Project::getPublished()
         ]);
     }
 

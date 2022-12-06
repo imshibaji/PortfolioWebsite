@@ -4,7 +4,7 @@
             <a class="flex" href="/">
                 <div class="avatar mr-1">
                     <div class="avatar-circle">
-                        <img class="" src="https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/app-icon-114.png">
+                        <img class="" src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/app-icon-114.png">
                     </div>
                 </div>
                 <div class="ml-1">
@@ -32,6 +32,9 @@
                 <a href="/articles" class="navbar-item btn-creative {{ request()->is('articles') ? 'btn-active' : '' }}">
                     <x-eos-products />  Articles
                 </a>
+                {{-- <a href="https://blog.shibajidebnath.com/" class="navbar-item btn-creative {{ request()->is('articles') ? 'btn-active' : '' }}">
+                    <x-eos-products />  Articles
+                </a> --}}
                 @auth
                 <a href="/user" class="navbar-item btn-creative {{ request()->is('login') ? 'btn-active' : '' }}">
                     <x-box-regular.home /> Dashboard

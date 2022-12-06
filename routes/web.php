@@ -12,6 +12,8 @@ use App\Models\Post;
 use App\Models\Training;
 use App\Models\Tutorial;
 use App\Models\Testimonial;
+use App\Models\Project;
+use App\Models\Service;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -62,7 +64,7 @@ Route::get('opts', function () {
     // return Option::asArray(['wpcf7']);
     // return Option::get('wpcf7');
     // return Post::getPublished();
-    // return Page::getPublished();
+    return Project::getPublished();
     // return Tutorial::all();
 });
 // Route::get('testi', function(){

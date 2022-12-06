@@ -17,7 +17,7 @@
     @show
     <link rel="shortcut icon" href="{{ asset('images/app-icon-114.png') }}" type="image/x-icon">
     <meta name="msvalidate.01" content="E96AFD0D771D3DACDFA6BB782BA6A589" />
-    @bukStyles(true)
+    {{-- @bukStyles(true) --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66468803-1"></script>
@@ -64,7 +64,7 @@
     </script>
     @yield('header')
 
-    <script type="application/ld+json">
+    {{-- <script type="application/ld+json">
         {
           "@context":"http://schema.org/",
           "@type":"Dataset",
@@ -100,7 +100,7 @@
              }
           }
         }
-    </script>
+    </script> --}}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -135,7 +135,7 @@
     @include('layouts.navbar')
     @yield('content')
     @include('layouts.footer')
-    @bukScripts(true)
+    {{-- @bukScripts(true) --}}
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('footer')
 </body>

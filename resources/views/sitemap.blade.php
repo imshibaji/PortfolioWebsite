@@ -25,18 +25,18 @@
     @endforeach
 
     {{-- Tutorial Fetch By Category --}}
-    @foreach ($categories as $cat)
+    {{-- @foreach ($categories as $cat)
         @if($cat->meta->ispublished == "Publish" && $cat->meta->ispaid == "Free")
             <url>
                 <loc>http://www.shibajidebnath.com/tutorial/{{$cat->slug}}</loc>
-                {{-- <lastmod>{{$tutorial->post_modified->format('Y-m-d')}}</lastmod> --}}
+                {{-- <lastmod>{{$tutorial->post_modified->format('Y-m-d')}}</lastmod> --}
                 <changefreq>monthly</changefreq>
                 <priority>0.8</priority>
             </url>
         @endif
-    @endforeach
+    @endforeach --}}
 
-    @foreach ($tutorials as $tutorial)
+    {{-- @foreach ($tutorials as $tutorial)
             @php
                 $taxo = $tutorial->taxonomies()->first();
                 // dd($taxo->meta->ispublished);
@@ -49,7 +49,7 @@
                     <priority>0.8</priority>
                 </url>
             @endif
-    @endforeach
+    @endforeach --}}
     {{-- Tutorial Fetch By Category --}}
 
     {{-- Differant Segment--}}
@@ -67,6 +67,16 @@
     <url>
         <loc>http://www.shibajidebnath.com/services/{{$service->slug}}</loc>
         <lastmod>{{$service->post_modified->format('Y-m-d')}}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>{{ rand (0*10, 1*10) / 10 }}</priority>
+     </url>
+    @endforeach
+
+    {{-- Differant Segment--}}
+    @foreach ($projects as $project)
+    <url>
+        <loc>http://www.shibajidebnath.com/project/{{$project->slug}}</loc>
+        <lastmod>{{$project->post_modified->format('Y-m-d')}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>{{ rand (0*10, 1*10) / 10 }}</priority>
      </url>

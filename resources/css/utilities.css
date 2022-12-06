@@ -23,7 +23,6 @@
     height: 400px;
 }
 .img-back{
-    background-image: url('https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/tech-back.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

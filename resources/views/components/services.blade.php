@@ -1,4 +1,4 @@
-<div class="w-full px-4 py-10 bg-cover card bg-base-200 bg-fixed" style="background-image: url('https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/backcode.jpg');">
+<div class="w-full px-4 py-10 bg-cover card bg-base-200 bg-fixed" style="background-image: url('{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/backcode.jpg');">
     <div class="flex justify-center mb-9">
         <div class="h3 glass p-4 w-auto text-white font-orbitron">What I am doing...</div>
     </div>

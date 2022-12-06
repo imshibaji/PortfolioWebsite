@@ -1,7 +1,7 @@
 <hr class="border-0 border-b-4 border-primary dark:border-white">
 <div class="footer-top py-8">
     <div class="flex justify-center flex-wrap lg:flex-row">
-        <a href="/software-development-course" class="btn btn-ghost btn-sm btn-creative lg:mx-2 m-2">Coding Course</a>
+        {{-- <a href="/software-development-course" class="btn btn-ghost btn-sm btn-creative lg:mx-2 m-2">Coding Course</a> --}}
         <a href="/online-training" class="btn btn-ghost btn-sm btn-creative lg:mx-2 m-2">InPerson Training</a>
         <a href="/testimonials" class="btn btn-ghost btn-sm btn-creative lg:mx-2 m-2">Testimonials</a>
         {{-- <a href="/payment" class="btn btn-ghost btn-sm btn-creative lg:mx-2 m-2">Payment Methods</a> --}}

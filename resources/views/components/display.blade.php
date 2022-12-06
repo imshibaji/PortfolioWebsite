@@ -6,7 +6,7 @@
                     <h1 class="h2">Shibaji Debnath</h1>
                     <p>I am a Technology trainer and Software consultant. I worked at various MNCs and love to learn new technology and spread the knowledge.</p>
                 </div>
-                <img src="https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/shibaji.png" height="300px">
+                <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/shibaji.png" height="300px">
             </div>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -21,7 +21,7 @@
                     <h1 class="h2">Shibaji Debnath</h1>
                     <p>I am a Technology trainer and Software consultant. I worked at various MNCs and love to learn new technology and spread the knowledge.</p>
                 </div>
-                <img src="https://www.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.png" height="300px">
+                <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.png" height="300px">
             </div>
         </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

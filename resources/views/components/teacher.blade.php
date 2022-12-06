@@ -15,7 +15,7 @@
 <div class="card bordered p-4">
     <div class="avatar flex flex-col justify-center items-center">
         <div class="rounded-full w-60 h-60 ring ring-primary ring-offset-base-100 ring-offset-8">
-            <img src="https://cms.shibajidebnath.com/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
+            <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
         </div>
         <h3 class="h3 text-center mt-3 py-1">Shibaji Debnath</h3>
         <p class="h6 mb-2 text-center py-1">Ex Google Software Developer and Instructor</p>
