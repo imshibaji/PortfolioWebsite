@@ -17,17 +17,17 @@
                 <a href="/" class="navbar-item btn-creative {{ request()->is('/') ? 'btn-active' : '' }}">
                     <x-icon-home /> Home
                 </a>
-                <a href="/app-development-services" class="navbar-item btn-creative {{ request()->is('app-development-services') ? 'btn-active' : '' }}">
-                    <x-file-service-fabric />  My Services
+                <a href="/application-developer" class="navbar-item btn-creative {{ request()->is('application-developer') ? 'btn-active' : '' }}">
+                    <x-file-service-fabric /> Services
                 </a>
                 {{-- <a href="/software-development-course" class="navbar-item btn-creative {{ request()->is('software-development-course') ? 'btn-active' : '' }}">
                     <x-eos-school-o /> Coding Course
                 </a> --}}
                 <a href="/online-training" class="navbar-item btn-creative {{ request()->is('online-training') ? 'btn-active' : '' }}">
-                    <x-eos-star-o /> InPerson Training
+                    <x-eos-star-o /> Training Courses
                 </a>
-                <a href="/my-projects" class="navbar-item btn-creative {{ request()->is('my-projects') ? 'btn-active' : '' }}">
-                    <x-cool-sketch /> Projects
+                <a href="/projects-and-portfolio" class="navbar-item btn-creative {{ request()->is('projects-and-portfolio') ? 'btn-active' : '' }}">
+                    <x-cool-sketch /> Portfolio
                 </a>
                 <a href="/articles" class="navbar-item btn-creative {{ request()->is('articles') ? 'btn-active' : '' }}">
                     <x-eos-products />  Articles
@@ -56,9 +56,9 @@
             <div x-show="open" class="dropdown-content">
                 <div class="dropdown-item">
                     <li class="btn-creative"><a href="/"><x-icon-home /> Home</a></li>
-                    <li class="btn-creative"><a href="/app-development-services"><x-file-service-fabric />  My Services</a></li>
+                    <li class="btn-creative"><a href="/application-developer"><x-file-service-fabric /> Services</a></li>
                     {{-- <li class="btn-creative"><a href="/software-development-course"><x-eos-school-o /> Coding Course</a></li> --}}
-                    <li class="btn-creative"><a href="/online-training"><x-eos-star-o /> InPerson Learning</a></li>
+                    <li class="btn-creative"><a href="/online-training"><x-eos-star-o /> Training Courses</a></li>
                     <li class="btn-creative"><a href="/my-projects"><x-cool-sketch /> Projects</a></li>
                     <li class="btn-creative"><a href="/articles"><x-eos-products />  Articles</a></li>
                     @auth

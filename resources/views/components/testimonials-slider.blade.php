@@ -1,6 +1,6 @@
 <div class="container py-5">
     <h6 class="font-orbitron text-center"><a href="{{url('testimonials')}}">Students Feedbacks</a></h6>
-
+    {{-- <p class="px-2">More Than 1000+ Students Trained By Me. Here is some feedbacks</p> --}}
     <div class="flex flex-col">
         @foreach ($testimonials as $test)
             <div class="lg:flex-1 card shadow-lg bordered m-2 lg:mx-2">

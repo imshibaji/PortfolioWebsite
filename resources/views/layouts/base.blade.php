@@ -138,5 +138,6 @@
     {{-- @bukScripts(true) --}}
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('footer')
+    @captcha
 </body>
 </html>

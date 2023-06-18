@@ -2,6 +2,7 @@
 <div class="flex-1 w-full lg:w-1/2">
     <form class="mx-4" action="{{ route($action ?? 'login') }}" method="post">
         @csrf
+        @honeypot
         @if(isset($product_amt) && isset($product_name))
             <input type="hidden" name="product_name" value="{{$product_name}}">
             <input type="hidden" name="product_amt" value="{{$product_amt}}">

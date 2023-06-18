@@ -49,7 +49,7 @@ class PageController extends Controller
         }
 
         $post = Page::slug($slug)->first();
-        if($slug == 'my-projects'){
+        if($slug == 'projects-and-portfolio'){
             $posts = Post::getPublishedLimited();
             $title = $post->meta->_yoast_wpseo_title ?? $post->title.' - Shibaji Debnath';
             $keyword = $post->meta->_yoast_wpseo_focuskw;
@@ -58,7 +58,7 @@ class PageController extends Controller
         }
 
         $post = Page::slug($slug)->first();
-        if($slug == 'app-development-services'){
+        if($slug == 'application-developer'){
             $posts = Post::getPublishedLimited();
             $title = $post->meta->_yoast_wpseo_title ?? $post->title.' - Shibaji Debnath';
             $keyword = $post->meta->_yoast_wpseo_focuskw;

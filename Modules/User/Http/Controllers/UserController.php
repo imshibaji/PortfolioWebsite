@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
 use Modules\User\Entities\TutorialCatagory;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactEnquery;
 
 class UserController extends Controller
 {
@@ -19,6 +21,16 @@ class UserController extends Controller
     public function index()
     {
         return view('user::index');
+    }
+
+    /**
+     * Contact Page
+     */
+    public function contact(Request $request)
+    {
+        Mail::to('imshibaji@gmail.com')->send(new ContactEnquery($request->input()));
+        $request->session()->flash('alert', 'Your Appointment Booking enquery goes successfully.');
+        return back();
     }
 
     /**

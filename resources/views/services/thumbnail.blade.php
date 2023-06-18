@@ -18,6 +18,7 @@
       <h4 class="py-0 my-0">Sourcecode Download</h4>
       <form action="/project/download" method="POST">
             @csrf
+            @honeypot
             <input type="hidden" name="subject" value="Sourcecode Download">
             <input type="hidden" name="pid" value="{{$post->ID}}">
             <input type="hidden" name="purpose" value="{{ $title ?? '' }}">

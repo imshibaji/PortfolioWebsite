@@ -56,7 +56,8 @@ module.exports = {
 
           // 'fontFamily': 'orbitron',
           'fontFamily': 'poppins',
-          'primary': '#088cd8',
+        //   'primary': '#088cd8',
+          'primary': '#1f2937',
           'primary-focus': '#03588a',
           'primary-content': '#ffffff',
           'secondary': '#ef9fbc',

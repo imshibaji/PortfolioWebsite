@@ -100,6 +100,12 @@ require __DIR__.'/auth.php';
 require __DIR__.'/../Modules/Payment/Routes/web.php';
 require __DIR__.'/../Modules/User/Routes/web.php';
 
+
+// Redirect Section
+Route::permanentRedirect('/app-development-services','/application-developer');
+Route::permanentRedirect('/business-growth-services','/application-developer');
+Route::permanentRedirect('/my-projects','/projects-and-portfolio');
+
 Route::get('/{slug}', [PageController::class, 'post' ]);
 
 

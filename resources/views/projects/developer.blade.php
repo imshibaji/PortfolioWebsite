@@ -4,7 +4,7 @@
             <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
         </div>
         <h3 class="h5 mt-3 py-1">Shibaji Debnath</h3>
-        <p class="h6 mb-2 text-center py-1">Freelance Software/Application Enginner and Developer</p>
+        <p class="h6 mb-2 text-center py-1">Freelance Software/Application Engineer and Developer</p>
         {{-- Training --}}
         @if((request()->is('online-training') || (request()->is('trainings/*'))))
         <p class="text-center mb-2 py-1">I make people aware about core knowledge and concepts about programming and technology. I don't care about theories, conventions or anything all.</p>

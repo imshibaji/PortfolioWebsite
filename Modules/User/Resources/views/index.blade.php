@@ -11,7 +11,7 @@
         <x-alert class="alert alert-success" />
     </div>
     <div class="py-0">
-        <div class="max-w-7xl mx-0 mb-8">
+        <div class=" mx-0 mb-8">
             @include('user::components.dashboard')
         </div>
     </div>

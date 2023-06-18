@@ -23,7 +23,7 @@
         @if((request()->is('online-training') || (request()->is('trainings/*'))))
         <p class="text-center mb-2 py-1">I make people aware about core knowledge and concepts about programming and technology. I don't care about theories, conventions or anything all.</p>
         @endif
-        {{-- <h5 class="flex text-green-700 dark:text-yellow-300"><x-box-regular.mobile /><x-box-logos.whatsapp />+91-8981009499</h5> --}}
+        <h5 class="flex text-green-700 dark:text-yellow-300"><x-box-regular.mobile /><x-box-logos.whatsapp />+91-8981009499</h5>
         <div class="text-center btn-group mt-1">
             <a href="https://www.youtube.com/c/ShibajiDebnath?sub_confirmation=1" target="_blank" class="btn btn-ghost btn-xs"><x-box-logos.youtube /> Youtube</a>
             <a href="https://www.facebook.com/iamshibaji" target="_blank" class="btn btn-ghost btn-xs"><x-box-logos.facebook /> Facebook</a>
@@ -34,7 +34,7 @@
 </div>
 {{-- Subscribe --}}
 <div class="card bordered p-4 mt-2">
-    <a href="#sub-modal" class="btn btn-primary dark:bg-gray-900 dark:border-black">Book for Demo Session</a>
+    <a href="#sub-modal" class="button">Book for Demo Session</a>
 </div>
 @endif
 
@@ -50,6 +50,7 @@
       {{-- <p>Price: <strong class="text-green-500">₹ {{number_format($amt, 2)}}/-</strong> for 30 Minutes</p> --}}
       <form action="/trainings/enquery" method="POST">
           @csrf
+          @honeypot
           <input type="hidden" name="course_name" value="Demo Session">
           {{-- <input type="hidden" name="course_price" value="{{$amt}}"> --}}
         <div>

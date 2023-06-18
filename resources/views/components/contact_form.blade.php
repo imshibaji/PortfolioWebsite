@@ -2,6 +2,7 @@
 
 <form action="/contact" method="POST" class="my-2">
 @csrf
+@honeypot
 <div class="form-control w-full">
     <label class="label">
         <span class="label-text">Your Name (required)</span>

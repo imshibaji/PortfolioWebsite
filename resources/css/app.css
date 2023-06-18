@@ -12,6 +12,7 @@
 @import "./wp-styles.min.css";
 @import "./wp-video-block-style.min.css";
 @import "./code.css";
+@import "./ribbon.css";
 /* @import "./bootstrap.css"; */
 
 @layer base{

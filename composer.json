@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "albertcht/invisible-recaptcha": "^1.9",
         "blade-ui-kit/blade-icons": "^1.1",
         "blade-ui-kit/blade-ui-kit": "^0.3.1",
         "corcel/acf": "^4.0",
@@ -15,7 +16,8 @@
         "laravel/cashier": "^13.5",
         "laravel/framework": "^8.54",
         "laravel/tinker": "^2.5",
-        "nwidart/laravel-modules": "^8.2"
+        "nwidart/laravel-modules": "^8.2",
+        "spatie/laravel-honeypot": "^3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

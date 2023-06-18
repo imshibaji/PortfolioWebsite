@@ -4,12 +4,14 @@
             <img src="{{env('CMS_URL')}}/wp-content/themes/mynewtheme/assets/imgs/smilling_shib.jpg">
         </div>
         <h3 class="h5 mt-3 py-1">Shibaji Debnath</h3>
-        <p class="h6 mb-2 text-center py-1">Freelance Software/Application Enginner and Developer</p>
+        <p class="h6 mb-2 text-center py-1">Web Developer / Web Architect, Trainer, Tech Entrepreneur.</p>
+
         {{-- Training --}}
         @if((request()->is('online-training') || (request()->is('trainings/*'))))
         <p class="text-center mb-2 py-1">I make people aware about core knowledge and concepts about programming and technology. I don't care about theories, conventions or anything all.</p>
         @endif
-        {{-- <h5 class="flex text-green-700 dark:text-yellow-300"><x-box-regular.mobile /><x-box-logos.whatsapp />+91-8981009499</h5> --}}
+        <p class="text-center mb-2 py-1">Software/Website and Mobile Development Services provided by over 14 years. Our solutions can help to grow your business.</p>
+        <h5 class="flex text-green-700 dark:text-yellow-300"><x-box-regular.mobile /><x-box-logos.whatsapp />+91-8981009499</h5>
         <div class="text-center btn-group mt-1">
             <a href="https://www.youtube.com/c/ShibajiDebnath" class="btn btn-ghost btn-xs"><x-box-logos.youtube /> Youtube</a>
             <a href="https://www.facebook.com/iamshibaji" class="btn btn-ghost btn-xs"><x-box-logos.facebook /> Facebook</a>
@@ -19,7 +21,7 @@
     </div>
 </div>
 <div class="card bordered p-4 mt-2">
-    <a href="#sub-modal" class="btn btn-primary dark:bg-gray-900 dark:border-black">I want to more discuss</a>
+    <a href="#sub-modal" class="btn btn-primary dark:bg-gray-900 dark:border-black">Contact for Demo</a>
     {{-- <a href="/project/create" class="btn btn-primary dark:bg-gray-900 dark:border-black">Hire Me for Project</a> --}}
 </div>
 

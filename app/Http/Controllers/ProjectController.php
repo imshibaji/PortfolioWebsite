@@ -24,7 +24,7 @@ class ProjectController extends Controller
             $description = $post->meta->_yoast_wpseo_metadesc;
             return view('projects.show', compact('post', 'title', 'keyword', 'description'));
         }else{
-            return redirect('/my-projects');
+            return redirect('/projects-and-portfolio');
         }
     }
 

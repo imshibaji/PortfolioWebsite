@@ -1,6 +1,9 @@
 <div class="flex flex-wrap lg:justify-start justify-items-stretch w-full py-2">
     @foreach ($posts as $post)
-        <div class="flex-auto lg:w-1/4 w-auto border border-gray-900 m-3" >
+        <div class="flex-auto lg:w-1/4 w-auto border border-gray-900 m-3 relative" >
+            @if($post->popular == 'yes')
+                <div class="ribbon"><span>Popular</span></div>
+            @endif
             <div class="card-body justify-between flex-auto p-2">
                 <h2 class="h4">{{$post->title}}</h2>
                 <div class="py-3">
@@ -24,3 +27,6 @@
     @endforeach
 </div>
 
+@section('header')
+<link href="{{ asset('css/ribbon.css') }}" rel="stylesheet">
+@endsection

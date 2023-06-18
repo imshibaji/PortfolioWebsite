@@ -21,6 +21,9 @@ class AllTrainingsShortcode implements Shortcode
                 'summery' => str_replace("\n", "<br>", $post->post_excerpt),
                 'price' => $post->meta->course_price,
                 'price_usd' => $post->meta->course_price_usd,
+                'spacial' => $post->meta->_training_spacial_meta_key,
+                'popular' => $post->meta->_training_popular_meta_key,
+                'why' => $post->meta->_training_why_meta_key,
                 'offer' => Option::get('offer_amt'),
                 'link' => $post->slug
             ];

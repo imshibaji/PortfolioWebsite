@@ -5,11 +5,11 @@
 <div class="flex lg:flex-row flex-col">
     <div class="lg:w-3/12 w-auto py-5 pt-0 order-2 lg:order-1">
         <div class="p-2 flex flex-col">
-            @include('services.thumbnail')
+            @include('projects.thumbnail')
         </div>
         <hr class="my-3 mx-2 border border-primary dark:border-white">
         <div class="px-2">
-            @include('services.developer')
+            @include('projects.developer')
         </div>
         {{-- <div class="px-2">
             @include('services.review')

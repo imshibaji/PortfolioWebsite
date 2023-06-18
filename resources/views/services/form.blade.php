@@ -14,6 +14,7 @@
       <h4 class="py-0 my-0">Give Details about Project</h4>
       <form action="/project/enquiry" method="POST">
             @csrf
+            @honeypot
             <input type="hidden" name="subject" value="Project Requirements">
             <div class="flex flex-wrap overflow-hidden">
                 <div class="w-full px-2 form-control">

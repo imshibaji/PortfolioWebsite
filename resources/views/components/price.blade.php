@@ -37,7 +37,7 @@
         <div class="w-full">Class Type: {{$ctype}}</div>
         <div class="w-full">Prerequisist: {{$know}}</div>
         <div class="w-full">Class Duration: {{$duration}}</div>
-        <div class="w-full">Practice: {{$duration}}</div>
+        {{-- <div class="w-full">Practice: {{$duration}}</div> --}}
     </div>
 </div>
 <div class="w-full pt-3">
@@ -85,7 +85,7 @@
         <div class="w-full">Class Type: {{$ctype}}</div>
         <div class="w-full">Prerequisist: {{$know}}</div>
         <div class="w-full">Class Duration: {{$duration}}</div>
-        <div class="w-full">Practice: {{$duration}}</div>
+        {{-- <div class="w-full">Practice: {{$duration}}</div> --}}
     </div>
 </div>
 <div class="w-full mb-5">
@@ -117,6 +117,7 @@
       </h6>
       <form action="/trainings/enquery" method="POST">
           @csrf
+          @honeypot
           <input type="hidden" name="course_name" value="{{$title ?? 'Students Training Programme'}}">
           <input type="hidden" name="course_price" value="{{$main_price}}">
         <div>

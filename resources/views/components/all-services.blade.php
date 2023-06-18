@@ -1,4 +1,4 @@
-<div class="flex flex-wrap lg:justify-start justify-items-stretch w-full py-2">
+<div class="flex flex-wrap lg:justify-start justify-items-stretch w-full py-2 px-0">
     @foreach ($posts as $post)
         <div class="lg:w-1/2 w-full">
             <div class="border border-gray-900 m-3">

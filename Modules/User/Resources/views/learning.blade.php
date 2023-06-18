@@ -22,7 +22,7 @@
         <x-alert class="alert alert-success" />
     </div>
     <div class="py-0">
-        <div class="max-w-7xl mx-0 mb-16">
+        <div class="mx-0 mb-16">
             <div class="flex flex-wrap my-4">
                 @foreach($tutorials as $tut)
                     @include('user::components.card', [

@@ -5,20 +5,20 @@
     @apply mb-2 shadow-lg bg-nav text-neutral-content;
 }
 .bg-nav{
-    @apply bg-gradient-to-b from-primary to-blue-500 dark:from-black dark:to-gray-800;
+    @apply bg-gradient-to-b from-black to-gray-800 dark:from-black dark:to-gray-800;
 }
 .my-btn-bg{
     @apply border-indigo-50 bg-gradient-to-b from-primary to-blue-500 transition-all hover:from-primary hover:to-primary-focus;
 }
 
 .logo-start{
-    @apply text-2xl font-bold text-yellow-200 dark:text-primary;
+    @apply text-2xl font-bold text-green-500 dark:text-primary;
 }
 .logo-end{
     @apply text-2xl font-bold text-white;
 }
 .avatar-circle{
-    @apply rounded-full ring ring-yellow-300 dark:ring-primary ring-offset-base-100 ring-offset-2 w-8 h-8 bg-white;
+    @apply rounded-full ring ring-green-500 dark:ring-primary ring-offset-base-100 ring-offset-2 w-8 h-8 bg-white;
 }
 .navbar-menu{
     @apply flex-none hidden px-2 mx-2 lg:flex;
@@ -59,4 +59,8 @@
 .no-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.button{
+   @apply btn btn-primary dark:bg-gray-900 dark:border-black;
 }

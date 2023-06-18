@@ -9,7 +9,7 @@
     </div>
 
     <div class="py-0">
-        <div class="max-w-7xl mx-0 mb-16 sm:px-6 lg:px-8">
+        <div class="mx-0 mb-16 sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-black overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200 dark:bg-black dark:border-black">
                     You're logged in!

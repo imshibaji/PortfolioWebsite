@@ -6,17 +6,17 @@
     {{-- <div class="lg:w-8/12 w-auto lg:px-5 h-100v overflow-y-scroll no-scrollbar"> --}}
     <div class="lg:w-9/12 w-auto lg:px-5">
         <div class="flex flex-col sm:flex-row w-full items-center">
-            <div class="w-full sm:w-2/3">
+            <div class="w-full">
                 @if ($post->post_excerpt)
-                    <h1 class="h3 my-0 pb-0">{{$post->post_title}}</h1>
-                    <h2 class="h6 my-0 pt-0 text-green-600">{{$post->post_excerpt}}</h2>
+                    <h1 class="h4 my-0 pb-1">{{$post->post_title}}</h1>
+                    <h2 class="h6 my-0 pt-1 text-green-600">{{$post->post_excerpt}}</h2>
                 @else
                     <h1 class="h3 my-0">{{$post->post_title}}</h1>
                 @endif
             </div>
-            <div class="w-full sm:w-1/3 sm:text-right">
+            {{-- <div class="w-full sm:w-1/3 sm:text-right">
                 <a href="/project/create" class="btn btn-primary btn-sm self-center">Hire Me for Project</a>
-            </div>
+            </div> --}}
         </div>
         <hr class="border border-primary dark:border-white">
         <div class="my-2 mb-8">{!! $post->content !!}</div>

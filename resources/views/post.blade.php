@@ -19,7 +19,7 @@
             @include('components.teacher')
         </div>
         <div class="px-2">
-            @if(request()->is('software-development-course'))
+            @if(request()->is('software-development-course') || request()->is('application-developer'))
                 <x-testimonials-slider limit="{{ $post->meta->review_limit ?? '6' }}" />
             @else
                 <x-testimonial-slider />

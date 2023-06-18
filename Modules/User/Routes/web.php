@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('user')->middleware(['auth'])->group(function() {
 
     Route::get('', 'UserController@index')->name('user');
+    Route::post('/contact', 'UserController@contact')->name('user.contact');
     Route::get('/learning', 'UserController@learning')->name('user.learning');
     Route::get('/profile', 'UserController@profile')->name('user.profile');
     Route::get('/support', 'UserController@support')->name('user.support');
